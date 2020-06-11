@@ -1,0 +1,50 @@
+site_name: ECO309
+
+nav:
+- Index: index.md
+- Introduction: notebooks/0_General_Introduction.ipynb
+- System: linux_and_git.md
+- Optimization: optim_slides.md
+- Dynamic Programming: discrete_dynamic_programming.md
+- Discretization: discretization.md
+- Differentiation: differentiation.md
+- Cake Eating: cake.md
+- RBC: rbc.md
+- Notebooks:
+    - Julia Basics: notebooks/1_Julia_Basics_tutorial.ipynb
+    - Epidemiology: notebooks/2_Epidemiology_tutorial.ipynb
+    - Optimization (1): notebooks/6_Optimization_tutorial.ipynb
+    - Optimization (2): notebooks/6a_Optimization_pushups.ipynb
+    - DMP (1): notebooks/7_Discrete_Markov_Programs_tutorial.ipynb
+    - DMP (2): notebooks/7a_Discrete_Markov_Programs_tutorial.ipynb
+    - Monte-Carlo and Interpolation: notebooks/8_Monte_Carlo_Interpolation.ipynb
+    - Homework (2): notebooks/9_Homework_2.ipynb
+    - FOCS and RBC: notebooks/10_FOCs_and_RBC_model.ipynb
+
+theme:
+  name: material
+  feature:
+    tabs: true
+
+
+plugins:
+  - mknotebooks
+
+markdown_extensions:
+  - mdx_math
+  - markdown_inline_graphviz
+  - markdown.extensions.admonition
+  - pymdownx.details
+  - pymdownx.arithmatex
+  - pymdownx.highlight:
+      use_pygments: true
+      extend_pygments_lang: [yaml]
+  - pymdownx.superfences
+
+# extra_css:
+#     - css/extra.css
+
+
+extra_javascript:
+  # other extra java script
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
